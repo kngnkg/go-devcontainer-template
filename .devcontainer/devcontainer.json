@@ -1,0 +1,42 @@
+{
+    "name": "Go",
+    "dockerComposeFile": ["../docker-compose.yml"],
+    "service": "app" ,
+    "workspaceFolder": "/go/src/app",
+    "settings": {
+      "terminal.integrated.defaultProfile.linux": "bash",
+	  "terminal.integrated.profiles.linux": {
+		"bash": {
+			"path": "/bin/bash",
+			"icon": "terminal-bash"
+		},
+		"zsh": {
+			"path": "zsh"
+		},
+		"fish": {
+			"path": "fish"
+		},
+		"tmux": {
+			"path": "tmux",
+			"icon": "terminal-tmux"
+		},
+		"pwsh": {
+			"path": "pwsh",
+			"icon": "terminal-powershell"
+		}
+	  },
+      "go.toolsManagement.checkForUpdates": "off",
+      "go.gopath": "/go",
+      "go.gocodeAutoBuild": true,
+      "go.formatTool": "gofmt",
+      "go.useLanguageServer": true,
+      "editor.formatOnSave": false,
+      "[go]": {
+        "editor.formatOnSave": true
+      }
+    },
+    "extensions": [
+		"golang.go",
+		"oderwat.indent-rainbow"
+	]
+  }
